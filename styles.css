@@ -144,3 +144,36 @@ footer {
     align-items: flex-end;
   }
 }
+
+.event-gallery {
+  margin-bottom: 3rem;
+}
+
+.event-gallery h3 {
+  margin-bottom: 1rem;
+  color: #002147;
+  border-left: 5px solid #cc112f;
+  padding-left: 0.5rem;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}
